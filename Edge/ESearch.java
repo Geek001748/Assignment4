@@ -1,11 +1,13 @@
+package Edge;
+
 import java.util.*;
 
-public class Search<Vertex> {
+public class ESearch<Vertex> {
     protected Set<Vertex> marked;
     protected Map<Vertex, Vertex> edgeTo;
     protected final Vertex source;
 
-    public Search(Vertex source) {
+    public ESearch(Vertex source) {
         this.source = source;
         marked = new HashSet<>();
         edgeTo = new HashMap<>();

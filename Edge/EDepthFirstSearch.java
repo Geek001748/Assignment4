@@ -1,5 +1,7 @@
-public class DepthFirstSearch<Vertex> extends Search<Vertex> {
-    public DepthFirstSearch(MyGraph<Vertex> graph, Vertex source) {
+package Edge;
+
+public class EDepthFirstSearch<Vertex> extends ESearch<Vertex> {
+    public EDepthFirstSearch(MyGraph<Vertex> graph, Vertex source) {
         super(source);
 
         dfs(graph, source);

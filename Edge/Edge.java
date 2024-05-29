@@ -1,3 +1,5 @@
+package Edge;
+
 import java.util.Objects;
 
 public class Edge<Vertex> {

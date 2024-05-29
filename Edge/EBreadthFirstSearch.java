@@ -1,8 +1,10 @@
+package Edge;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BreadthFirstSearch<Vertex> extends Search<Vertex>{
-    public BreadthFirstSearch(MyGraph<Vertex> graph, Vertex source) {
+public class EBreadthFirstSearch<Vertex> extends ESearch<Vertex>{
+    public EBreadthFirstSearch(MyGraph<Vertex> graph, Vertex source) {
         super(source);
 
         bfs(graph, source);

@@ -1,20 +1,22 @@
+package Edge;
+
 import java.util.*;
 
-public class DijkstraSearch<Vertex> extends Search<Vertex> {
+public class EDijkstraSearch<Vertex> extends ESearch<Vertex> {
     private final Set<Vertex> unsettledNodes;
     private final Map<Vertex, Double> distances;
-    private final WeightedGraph<Vertex> graph;
+    private final EWeightedGraph<Vertex> graph;
 
-    public DijkstraSearch(WeightedGraph<Vertex> graph, Vertex source) {
+    public EDijkstraSearch(EWeightedGraph<Vertex> graph, Vertex source) {
         super(source);
         unsettledNodes = new HashSet<>();
         distances = new HashMap<>();
         this.graph = graph;
 
-        dijkstra();
+        Edijkstra();
     }
 
-    public void dijkstra() {
+    public void Edijkstra() {
         distances.put(source, 0D);
         unsettledNodes.add(source);
 
